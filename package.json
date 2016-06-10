@@ -5,7 +5,7 @@
   "description": "Virk CVR node js wrapper. Makes it easy to query the Danish company registry. Pull data from \"System-til-system adgang til CVR-data\".",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/BjarkeJ/virk-cvr/issues"
   },
-  "homepage": "https://github.com/BjarkeJ/virk-cvr"
+  "homepage": "https://github.com/BjarkeJ/virk-cvr",
+  "dependencies": {
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
 }

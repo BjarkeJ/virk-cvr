@@ -10,6 +10,10 @@ var apiKey;
 
 virkCVRClient = (function() {
 
+  /**********************/
+  /******** Init ********/
+  /**********************/
+
   function virkCVRClient(apiKey) {
     this.apiKey = apiKey;
     this.search = bind(this.search, this);
@@ -17,7 +21,10 @@ virkCVRClient = (function() {
   }
 
 
-  /******* Mapping *******/
+  /**********************/
+  /******* Mapping ******/
+  /**********************/
+
   virkCVRClient.prototype.mapping = function (callback) {
     'use strict';
 
@@ -45,7 +52,10 @@ virkCVRClient = (function() {
 
   };
 
+  /**********************/
   /******* Search *******/
+  /**********************/
+
   virkCVRClient.prototype.search = function (searchBody, callback) {
     'use strict';
 
