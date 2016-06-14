@@ -5,13 +5,13 @@ Dette er en node.js wrapper til det danske CVR register, også kendt som "System
 
 ## Simpel brug
 ```
-var virkCVRClient = require('./virk_cvr_wrapper');
+var virkCVR = require('virk-cvr');
 
 var apiKey = 'Basic XXXXXX';
 
-var vcc = new virkCVRClient(apiKey);
+var virkCVRClient = new virkCVRClient(apiKey);
 
-vcc.mapping(function (err, response) {
+virkCVRClient.mapping(function (err, response) {
   console.log(response);
 });
 
@@ -33,7 +33,7 @@ var searchQuery = { "from" : 0, "size" : 10,
   }
 };
 
-vcc.search(searchQuery, function (err, response) {
+virkCVRClient.search(searchQuery, function (err, response) {
   console.log(response.response.hits.hits);
 });
 
